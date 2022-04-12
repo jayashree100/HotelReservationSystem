@@ -1,6 +1,7 @@
 package com.bridgelab.hotelreservatio;
 
 import java.util.List;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class HotelReservation {
@@ -30,6 +31,12 @@ public class HotelReservation {
 	
 	public List<Hotel> getHotelList() {
 		return hotelList;
+	}
+	
+	public String getCheapestHotel(LocalDate startDate,LocalDate endDate,String customerType) {
+		String custType = customerType;
+		int cheapestRate,rateForHotel;
+		return cheapestHotel;
 	}
 
 }
